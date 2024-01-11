@@ -5,6 +5,8 @@ import 'package:kicks/constants/colors.dart';
 import 'package:kicks/features/personalization/screens/settings/settings.dart';
 import 'package:kicks/features/shop/screens/home/home.dart';
 import 'package:kicks/helpers/helper_function.dart';
+import 'package:kicks/ui/managesensor.dart';
+import 'package:kicks/ui/home.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -41,5 +43,5 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [const HomeScreen(), Container(color: Colors.purple), Container(color: Colors.orange), const SettingScreen()];
+  final screens = [const HomeScreen(), const ManageSensor(), const Home(), const SettingScreen()];
 }

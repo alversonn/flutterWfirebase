@@ -15,7 +15,7 @@ class TPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return TCurvedEdgeWidget(
       child: Container(
-        color: TColors.primary,
+        color: const Color.fromRGBO(75, 104, 255, 1),
   
         child: Stack(
           children: [
